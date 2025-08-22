@@ -25,7 +25,7 @@ class System:
         """
         net_forces = []
         for p in self.particles:
-            total = np.zeroes(3)
+            total = np.zeros(3)
             for f in self.forces:
                 total += f.compute(p)
             net_forces.append(total)
